@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+venv/
+vien_toi/
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

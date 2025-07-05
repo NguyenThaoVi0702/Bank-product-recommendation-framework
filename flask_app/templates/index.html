@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo"></div>
+            <h2>HOME</h2>
+            <h2 class="active">CUSTOMER PROFILE</h2>
+            <h2>SALE TRACKER</h2>
+            <img src="/static/logout.png" alt="Logout" class="logout-logo">
+        </div>
+        <div class="content">
+            <div class="customer-list" id="customer-list">
+                <table id="customer-table">
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be added dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="customer-details">
+                <img src="/static/avatar.png" alt="Avatar" class="customer-avatar" id="customer-avatar">
+                <h3 id="customer-id"></h3>
+                <h3 id="customer-age"></h3>
+                <h3 id="customer-income"></h3>
+                <h3 id="customer-segment"></h3>
+                
+                <h4>Purchased History:</h4>
+                <div class="scrollable-table">
+                    <table id="purchase-history-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Amount (VND)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="purchase-history-body">
+                            <!-- Rows will be added dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 id="recommended-product"></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

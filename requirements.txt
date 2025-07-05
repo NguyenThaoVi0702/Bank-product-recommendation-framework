@@ -1,0 +1,12 @@
+# Core Data Science Libraries
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+
+# Gradient Boosting Models
+lightgbm==4.3.0
+xgboost==2.0.3
+scipy==1.13.0
+
+flask
+

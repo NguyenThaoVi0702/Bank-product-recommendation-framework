@@ -1,0 +1,167 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #004e7c;
+    color: white;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    font-size: 10px;
+    position: relative;
+}
+
+/* Logo */
+.sidebar .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background: url('/static/logo.png') center/contain no-repeat;
+}
+
+/* Sidebar menu */
+.sidebar h2 {
+    margin: 30px 0 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Active menu option */
+.sidebar h2.active {
+    background-color: #f9f9f9;
+    color: #004e7c;
+}
+
+/* Default menu option */
+.sidebar h2:not(.active) {
+    background-color: transparent;
+}
+
+/* Logout logo */
+.logout-logo {
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Customer list */
+.customer-list {
+    width: 40%;
+    margin-right: 20px;
+    background-color: white;
+    overflow-y: auto; 
+    max-height: 600px; 
+    border: 1px solid #ddd;
+}
+
+.customer-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customer-list th,
+.customer-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.customer-list th {
+    background-color: #004e7c;
+    color: white;
+}
+
+.customer-list tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.customer-list tr.selected {
+    background-color: #004e7c;
+    color: white;
+}
+
+/* Customer details */
+.customer-details {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.customer-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.customer-details h3 {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+/* Scrollable purchase history table */
+.scrollable-table {
+    max-height: 200px; 
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.scrollable-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Highlight for recommended product */
+#recommended-product {
+    color: #ffffff;
+    background-color: #e65100; 
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+/* Label and value formatting */
+h3 strong {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: normal;
+}
