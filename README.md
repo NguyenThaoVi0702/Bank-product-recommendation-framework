@@ -14,7 +14,7 @@ The core of this project is a machine learning pipeline that:
 
 ## Key Features
 
--   **End-to-End Research Pipeline:** A single, executable script (`main_script.py`) that reproduces the entire research workflow.
+-   **End-to-End Research Pipeline:** A single, executable script (`model_pipeline.py`) that reproduces the entire research workflow.
 -   **Advanced Data Preprocessing:** Includes sophisticated techniques for handling duplicates, cleaning data, and removing multi-feature outliers.
 -   **Robust Model Benchmarking:** Systematically compares five different regression models using six performance metrics, with performance optimizations for faster execution.
 -   **Hyperparameter Optimization:** Utilizes `GridSearchCV` to fine-tune the best-performing model (LGBMRegressor) for maximum accuracy.
